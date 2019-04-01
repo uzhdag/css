@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg, .bgimg2 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg {background-image: url("zurich.jpg")}
+.bgimg2 {background-image: url("zurich.jpg")}
+</style>
+<body>
+
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo"><b>Computational Social Science - Quo Vadis?</b></h1>
+    <h1 class="w3-xlarge">An interdisciplinary symposium honoring <br /><b>Kathleen M. Carley</b></h1>
+    <h1 class="w3-xlarge">April 26th 2019</h1>
+    <h1 class="w3-xlarge">Universit&auml;t Z&uuml;rich</h1>
+  </div>
+</header>
+
+<!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+    <a href="#home" style="width:20%" class="w3-bar-item w3-button">Home</a>
+    <a href="#speakers" style="width:20%" class="w3-bar-item w3-button">Speakers</a>
+    <a href="#agenda" style="width:20%" class="w3-bar-item w3-button">Agenda</a>
+    <a href="#venue" style="width:20%" class="w3-bar-item w3-button">Venue</a>
+    <a href="#rsvp" style="width:20%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
+  </div>
+</div>
+
+<!-- Speakers Section -->
+<div class="w3-center w3-container" style="padding:128px 16px" id="speakers">
+    <h1 class="w3-center w3-text-grey">Speakers</h3>
+    <div class="w3-center w3-content">
+    <p><i>Key researchers in computational social science and data science will present recent advances in the data-driven modeling and prediction of human behavior. They will highlight future opportunities and challenges in this exciting research area at the intersection of computer science and the social sciences.</i>    
+    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+        <div class="w3-col l4 m6 w3-margin-bottom"></div>
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <div class="w3-card">
+              <img src="riedl.jpg" alt="John" style="height:200px;margin-top:10px">
+              <div class="w3-container">
+                <h3>Reinhard Riedl</h3>
+                <p class="w3-opacity">President<br />Swiss Informatics Society</p>
+                <!-- <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p> -->
+                <p><button class="w3-button w3-light-grey w3-block" onclick="window.open('https://swissinformatics.org/de/die-si/reinhard-riedl/')"><i class="fa fa-envelope"></i> Info</button></p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-col l4 m6 w3-margin-bottom"></div>
+        </div>
+
+    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">   
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="carley.jpg" alt="Kathleen M. Carley" style="height:200px;margin-top:10px">
+          <div class="w3-container">
+            <h3>Kathleen M. Carley</h3>
+            <p class="w3-opacity">School of Computer Science<br />Carnegie Mellon University</p>
+            <!-- <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p> -->
+            <p><button class="w3-button w3-light-grey w3-block" onclick="window.open('http://www.casos.cs.cmu.edu/bios/carley/carley.html')"><i class="fa fa-envelope"></i> Info</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="brockmann.jpg" alt="Dirk Brockmann" style="height:200px;margin-top:10px">
+          <div class="w3-container">
+            <h3>Dirk Brockmann</h3>
+            <p class="w3-opacity">Department of Biology<br />Humboldt Universit&auml;t zu Berlin</p>
+            <!-- <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p> -->
+            <p><button class="w3-button w3-light-grey w3-block" onclick="window.open('http://rocs.hu-berlin.de/')"><i class="fa fa-envelope"></i> Info</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="leskovec.jpg" alt="Jure Leskovec" style="height:200px;margin-top:10px">
+          <div class="w3-container">
+            <h3>Jure Leskovec</h3>
+            <p class="w3-opacity">Computer Science Department<br />Stanford University</p>
+            <!-- <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p> -->
+            <p><button class="w3-button w3-light-grey w3-block" onclick="window.open('https://cs.stanford.edu/people/jure/')"><i class="fa fa-envelope"></i> Info</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="scholtes.jpg" alt="Ingo Scholtes" style="height:200px;margin-top:10px">
+          <div class="w3-container">
+            <h3>Ingo Scholtes</h3>
+            <p class="w3-opacity">Data Analytics Group<br />Universit&auml;t Z&uuml;rich</p>
+            <!-- <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p> -->
+            <p><button class="w3-button w3-light-grey w3-block" onclick="window.open('http://www.casos.cs.cmu.edu/bios/carley/carley.html')"><i class="fa fa-envelope"></i> Info</button></p>
+          </div>
+        </div>
+      </div>  
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="schweitzer.jpg" alt="Frank Schweitzer" style="height:200px;margin-top:10px">
+          <div class="w3-container">
+            <h3>Frank Schweitzer</h3>
+            <p class="w3-opacity">Chair of Systems Design<br />ETH Z&uuml;rich</p>
+            <!-- <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p> -->
+            <p><button class="w3-button w3-light-grey w3-block" onclick="window.open('https://www.sg.ethz.ch/team/people/fschweitzer/')"><i class="fa fa-envelope"></i> Info</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="strohmaier.png" alt="Markus Strohmaier" style="height:200px;margin-top:10px">
+          <div class="w3-container">
+            <h3>Markus Strohmaier</h3>
+            <p class="w3-opacity">Department for Society, Technology, and Human Factors, RWTH Aachen</p>
+            <!-- <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p> -->
+            <p><button class="w3-button w3-light-grey w3-block" onclick="window.open('http://markusstrohmaier.info/')"><i class="fa fa-envelope"></i> Info</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Agenda -->
+<div class="w3-container w3-padding-64 w3-Indigo w3-grayscale-min" id="agenda">
+    <div class="w3-content">
+      <h1 class="w3-center w3-text-grey"><b>Agenda</b></h1>    
+      <table class="w3-table w3-striped">
+        <tr>
+            <th>Time</th>
+            <th>Speaker</th>
+          </tr>
+          <tr>
+            <td>14:00 - 14:10</td>
+            <td><b>Reinhard Riedl</b> | Swiss Informatics Society<br />
+            Welcome Address</td>
+          </tr>
+          <tr>
+            <td>14:10-14:30</td>
+            <td><b>Ingo Scholtes</b> | Universit&auml;t Z&uuml;rich<br />
+                Opening</td>
+          </tr>
+          <tr>
+            <td>14:30 - 15:15</td>
+            <td><b>Kathleen M. Carley</b> | Carnegie Mellon University<br />
+                TBA</td>
+          </tr>
+          <tr>
+            <td>15:15 - 16:00</td>
+            <td><b>Markus Strohmaier</b> | RWTH Aachen<br />
+                TBA</td>
+          </tr>
+          <tr class="w3-border">
+            <td>16:00 - 16:30</td>
+            <td><b>Coffee break</b></td>
+          </tr>
+          <tr>
+            <td>16:30 - 17:15</td>
+            <td><b>Jure Leskovec</b> | Stanford University<br />
+                TBA</td>
+          </tr>
+          <tr>
+            <td>17:15 - 18:00</td>
+            <td><b>Dirk Brockmann</b> | HU Berlin<br />
+                TBA</td>
+          </tr>
+          <tr>
+            <td>18:00 - 18:45</td>
+            <td><b>Frank Schweitzer</b> | ETH Z&uuml;rich<br />
+                TBA</td>
+          </tr>
+          <tr class="w3-border">
+            <td>18:45</td>
+            <td><b>Ap&eacute;ro</b></td>
+          </tr>
+      </table>
+    </div>
+  </div>
+
+<!-- Venue information -->
+<div class="w3-container w3-padding-64 w3-pale-Indigo w3-grayscale-min w3-center" id="wedding">
+  <div class="w3-content">
+    <h1 class="w3-text-grey"><b>Venue</b></h1>
+    <p><i>The symposium will be held in building <a href="https://www.plaene.uzh.ch/RAA">RAA</a> at the University of Zurich. Talks will take place in the aula RAA-G-01 and will be broadcasted to RAA-G-15.</p></i>
+    <img class="w3-round-large w3-grayscale-min" src="raa.png" style="width:700px;margin:64px 0">
+    <div class="w3-row">
+      <div class="w3-half">
+        <h2>When</h2>
+        <p>Friday, April 26 2019<br />14:00 pm - 18:45 pm</p>
+      </div>
+      <div class="w3-half">
+        <h2>Where</h2>
+        <p>University of Zurich <br/>
+            RAA-G-01 <br />
+            R&auml;mistrasse 59 <br />
+            Z&uuml;rich <br />
+        </p>        
+      </div>
+    </div>
+    <div class="w3-row">
+        <iframe width="600" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=r%C3%A4mistrasse%2059%2C%20z%C3%BCrich%20&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- RSVP section -->
+<div class="w3-container w3-padding-64 w3-Indigo w3-center w3-wide" id="rsvp">
+  <h1>Join us!</h1>
+  <p class="w3-large">Participation is free but seating is limited.</p><p>Kindly indicate your attendance</p>
+  <div id="eventbrite-widget-container-59689842927"></div>
+
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        // Required
+        widgetType: 'checkout',
+        eventId: '59689842927',
+        iframeContainerId: 'eventbrite-widget-container-59689842927',
+
+        // Optional
+        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+    });
+</script>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>This symposium is brought to you by the <a href="https://www.ifi.uzh.ch/dag" target="_blank" class="w3-hover-text-green">Data Analytics Group</a>, University of Zurich</p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+</body>
+</html>
