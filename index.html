@@ -14,29 +14,30 @@ p {line-height: 2}
   background-position: center;
   background-size: cover;
 }
-.bgimg {background-image: url("zurich.jpg")}
-.bgimg2 {background-image: url("zurich.jpg")}
+.bgimg { background-image: url("zurich.jpg"); background-color: darkgray; background-blend-mode: multiply; }
+.bgimg2 { background-image: url("zurich.jpg"); }
 </style>
 <body>
 
 <!-- Header / Home-->
 <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
   <div class="w3-display-middle w3-text-white w3-center">
-    <h1 class="w3-jumbo"><b>Computational Social Science - Quo Vadis?</b></h1>
-    <h1 class="w3-xlarge">An interdisciplinary symposium honoring <br /><b>Kathleen M. Carley</b></h1>
-    <h1 class="w3-xlarge">April 26, 2019</h1>
-    <h1 class="w3-xlarge">Universit&auml;t Z&uuml;rich</h1>
+    <h1 class="w3-xxxlarge"><b>Computational Social Science - Quo Vadis?</b></h1>
+    <h1 class="w3-xlarge">An interdisciplinary symposium<br />honoring <br /><b>Kathleen M. Carley</b></h1>
+    <h1 class="w3-large">April 26, 2019</h1>
+    <h1 class="w3-large">Universit&auml;t Z&uuml;rich</h1>
   </div>
 </header>
 
 <!-- Navbar (sticky bottom) -->
 <div class="w3-bottom w3-hide-small">
   <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
-    <a href="#home" style="width:20%" class="w3-bar-item w3-button">Home</a>
-    <a href="#speakers" style="width:20%" class="w3-bar-item w3-button">Speakers</a>
-    <a href="#agenda" style="width:20%" class="w3-bar-item w3-button">Agenda</a>
-    <a href="#venue" style="width:20%" class="w3-bar-item w3-button">Venue</a>
-    <a href="#rsvp" style="width:20%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
+    <a href="#home" style="width:16%" class="w3-bar-item w3-button w3-hover-black">Home</a>
+    <a href="#speakers" style="width:16%" class="w3-bar-item w3-button w3-hover-black">Speakers</a>
+    <a href="#agenda" style="width:16%" class="w3-bar-item w3-button w3-hover-black">Agenda</a>
+    <a href="#venue" style="width:16%" class="w3-bar-item w3-button w3-hover-black">Venue</a>
+    <a href="#rsvp" style="width:16%" class="w3-bar-item w3-button w3-hover-red">RSVP</a>
+    <a href="#organizer" style="width:16%" class="w3-bar-item w3-button w3-hover-black">Organizer</a>
   </div>
 </div>
 
@@ -44,12 +45,12 @@ p {line-height: 2}
 <div class="w3-center w3-container" style="padding:128px 16px" id="speakers">
     <h1 class="w3-center w3-text-grey"><b>Speakers</b></h3>
     <div class="w3-center w3-content">
-    <p><i>Key researchers in computational social science and data science will present recent advances in the data-driven modeling and prediction of human behavior. They will highlight future opportunities and challenges in this exciting research area at the intersection of computer science and the social sciences.</i>    
+    <p>Key researchers in computational social science and data science will present recent advances in the data-driven modeling and prediction of human behavior. They will highlight future opportunities and challenges in this exciting research area at the intersection of computer science and the social sciences.</p>
     <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
         <div class="w3-col l4 m6 w3-margin-bottom"></div>
         <div class="w3-col l4 m6 w3-margin-bottom">
             <div class="w3-card">
-              <img src="riedl.jpg" alt="John" style="height:200px;margin-top:10px">
+              <img src="https://swissinformatics.org/wp-content/uploads/2018/04/Portrait_Riedl_Vorstand_72.jpg" alt="Reinhard Riedl" style="height:200px;margin-top:10px">
               <div class="w3-container">
                 <h3>Reinhard Riedl</h3>
                 <p class="w3-opacity">President<br />Swiss Informatics Society</p>
@@ -135,48 +136,44 @@ p {line-height: 2}
 <!-- Agenda -->
 <div class="w3-container w3-padding-64 w3-Indigo w3-grayscale-min" id="agenda">
     <div class="w3-content">
-      <h1 class="w3-center w3-text-grey"><b>Agenda</b></h1>    
-      <table class="w3-table w3-striped">
-        <tr>
-            <th>Time</th>
-            <th>Speaker</th>
-          </tr>
-          <tr>
-            <td>14:00 - 14:05</td>
+      <h1 class="w3-center w3-text-grey"><b>Agenda</b></h1>
+      <table class="w3-table w3-striped" style="width: 80%; margin:auto">
+          <tr class="w3-border">
+            <td>14:00 &mdash; 14:05</td>
             <td><b>Reinhard Riedl</b> | Swiss Informatics Society<br />
             Welcome Address</td>
           </tr>
           <tr>
-            <td>14:05-14:30</td>
+            <td>14:05 &mdash; 14:30</td>
             <td><b>Ingo Scholtes</b> | Universit&auml;t Z&uuml;rich<br />
                 Opening: Computational Social Science - Quo Vadis?</td>
           </tr>
           <tr>
-            <td>14:30 - 15:15</td>
+            <td>14:30 &mdash; 15:15</td>
             <td><b>Kathleen M. Carley</b> | Carnegie Mellon University<br />
                 Keynote: TBA</td>
           </tr>
           <tr>
-            <td>15:15 - 16:00</td>
+            <td>15:15 &mdash; 16:00</td>
             <td><b>Markus Strohmaier</b> | RWTH Aachen<br />
                 TBA</td>
           </tr>
           <tr class="w3-border">
-            <td>16:00 - 16:30</td>
+            <td>16:00 &mdash; 16:30</td>
             <td><b>Coffee break</b></td>
           </tr>
           <tr>
-            <td>16:30 - 17:15</td>
+            <td>16:30 &mdash; 17:15</td>
             <td><b>Jure Leskovec</b> | Stanford University<br />
                 TBA</td>
           </tr>
           <tr>
-            <td>17:15 - 18:00</td>
+            <td>17:15 &mdash; 18:00</td>
             <td><b>Dirk Brockmann</b> | HU Berlin<br />
                 TBA</td>
           </tr>
           <tr>
-            <td>18:00 - 18:45</td>
+            <td>18:00 &mdash; 18:45</td>
             <td><b>Frank Schweitzer</b> | ETH Z&uuml;rich<br />
                 TBA</td>
           </tr>
@@ -192,8 +189,8 @@ p {line-height: 2}
 <div class="w3-container w3-padding-64 w3-pale-Indigo w3-grayscale-min w3-center" id="venue">
   <div class="w3-content">
     <h1 class="w3-text-grey"><b>Venue</b></h1>
-    <p><i>The symposium will be held in building <a href="https://www.plaene.uzh.ch/RAA">RAA</a> at the University of Zurich. Talks will take place in the aula RAA-G-01 and will be broadcasted to RAA-G-15.</p></i>
-    <img class="w3-round-large w3-grayscale-min" src="raa.png" style="width:700px;margin:64px 0">
+    <p>The symposium will be held in the historic aula RAA-G-01 in building <a href="https://www.plaene.uzh.ch/RAA">RAA</a> at University of Zurich.<p>Additional broadcasting to lecture hall RAA-G-15 is available.</p>
+    <img class="w3-round-large w3-grayscale-min" src="https://www.bdz.uzh.ch/vd/wiki/images/d/d1/RAA-G-01.png" style="width:80%;margin:64px 0">
     <div class="w3-row">
       <div class="w3-half">
         <h2>When</h2>
@@ -207,7 +204,7 @@ p {line-height: 2}
       </div>
     </div>
     <div class="w3-row">
-        <iframe width="600" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=r%C3%A4mistrasse%2059%2C%20z%C3%BCrich%20&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <iframe width="80%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=r%C3%A4mistrasse%2059%2C%20z%C3%BCrich%20&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
     </div>
   </div>
 </div>
@@ -216,7 +213,7 @@ p {line-height: 2}
 <div class="w3-container w3-padding-64 w3-Indigo w3-center w3-wide" id="rsvp">
    <div class="w3-content">
   <h1 class="w3-text-grey"><b>RSVP</b></h1>
-  <p class="w3-large">Participation is free but seating is limited.</p><p>To facilitate our planning, kindly indicate your attendance.</p>
+  <p class="w3-large">Participation is free but seating is limited. To facilitate our planning, kindly indicate your attendance.</p>
   <div id="eventbrite-widget-container-59689842927"></div>
 
 <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
@@ -241,9 +238,10 @@ p {line-height: 2}
 </div>
 
 <!-- RSVP section -->
-<div class="w3-container w3-padding-64 w3-Indigo w3-center w3-wide" id="rsvp">
+<div class="w3-container w3-padding-64 w3-Indigo w3-center w3-wide" id="organizer">
         <div class="w3-content">
        <h1 class="w3-text-grey"><b>Organizer</b></h1>
+       <p class="w3-large">Please contact the organizer for any inquiries:</p>
        <div class="w3-center w3-content">
             <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
                 <div class="w3-col l4 m6 w3-margin-bottom"></div>
