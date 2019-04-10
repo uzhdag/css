@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
 body,h1,h2{font-family: "Raleway", sans-serif}
@@ -231,27 +232,48 @@ p {line-height: 2}
 <div class="w3-container w3-padding-64 w3-Indigo w3-center w3-wide" id="rsvp">
    <div class="w3-content">
   <h1 class="w3-text-grey"><b>RSVP</b></h1>
-  <p class="w3-large">Participation is free but seating is limited. To facilitate our planning, kindly indicate your attendance.</p>
-  <div id="eventbrite-widget-container-59689842927"></div>
-
-<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-
-<script type="text/javascript">
-    var exampleCallback = function() {
-        console.log('Order complete!');
-    };
-
-    window.EBWidgets.createWidget({
-        // Required
-        widgetType: 'checkout',
-        eventId: '59689842927',
-        iframeContainerId: 'eventbrite-widget-container-59689842927',
-
-        // Optional
-        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+  <p class="w3-large">Participation is free but seating is limited. To facilitate our planning, kindly indicate your attendance via E-mail using the form below.<br />
+<form method="GET" enctype="text/plain" id="rsvpform">
+<table class="w3-table"  style="width: 80%; margin:auto;">  
+  <tr>
+    <td>first name:</td>
+    <td><input type="text" id="firstname" style="width:250px;"></td>
+  </tr>
+  <tr>
+    <td>last name:</td>
+    <td><input type="text" id="lastname" style="width:250px;"></td>
+  </tr>
+  <tr>
+      <td>institution (optional):</td>
+      <td><input type="text" id="institution" style="width:250px;"></td>
+    </tr>
+  <tr>
+    <td></td><td><button type="submit" class="w3-button w3-light-grey w3-block" style="width:250px;"><i class="fa fa-envelope"></i>Send RSVP</button></td>
+  </tr>
+  <tr>
+    
+    <td></td>
+    
+  </tr>
+</table>
+</form>
+<script>
+   $( "#rsvpform" ).submit(function( event ) {
+    var firstname = $('#firstname').val();
+    var lastname  = $('#lastname').val();
+    var institution = $('#institution').val();
+    if (institution == '')
+      institution = 'n/a';
+    if (firstname == '' || lastname == '')
+    {
+      alert('Please enter your first and last name!');
+      event.preventDefault();
+    }
+    else
+      $("#rsvpform").attr('action', 'mailto:scholtes@ifi.uzh.ch&subject=RSVP for Computational Social Science Symposium&body=Dear organizers,%0D%0A%0D%0AI plan to attend the symposium "Computational Social Science - Quo Vadis". My registration data are:%0D%0A%0D%0AFirstname:  ' + firstname + '%0D%0ALastname:   ' + lastname + '%0D%0AInstitution:  ' + institution + '%0D%0A%0D%0AKind regards,%0D%0A%0D%0A' + firstname + ' ' + lastname);
     });
-</script>
+  </script>
+<p>Note: <i>Your registration will be sent via E-Mail. No data are submitted to the server.</i></p>
 </div>
 </div>
 
