@@ -248,7 +248,7 @@ p {line-height: 2}
       <td><input type="text" id="institution" style="width:250px;"></td>
     </tr>
   <tr>
-    <td></td><td><button type="submit" class="w3-button w3-light-grey w3-block" style="width:250px;"><i class="fa fa-envelope"></i>Send RSVP</button></td>
+    <td></td><td><a href class="w3-button w3-light-grey w3-block" id="rsvpbtn" style="width:250px;">Send RSVP</a></td>
   </tr>
   <tr>
     
@@ -258,7 +258,7 @@ p {line-height: 2}
 </table>
 </form>
 <script>
-   $( "#rsvpform" ).submit(function( event ) {
+   $( "#rsvpbtn" ).click(function( event ) {
     var firstname = $('#firstname').val();
     var lastname  = $('#lastname').val();
     var institution = $('#institution').val();
@@ -270,7 +270,7 @@ p {line-height: 2}
       event.preventDefault();
     }
     else
-      $("#rsvpform").attr('action', 'mailto:scholtes@ifi.uzh.ch&subject=RSVP%20for%20Computational%20Social%20Science%20Symposium&body=Dear%20organizers,%0D%0A%0D%0AI%20plan%20to%20attend%20the%20symposium%20Computational%20Social%20Science%20-%20Quo%20Vadis.%20My%20registration%20data%20are:%0D%0A%0D%0AFirstname:%20%20' + firstname + '%0D%0ALastname:%20%20%20' + lastname + '%0D%0AInstitution:%20%20' + institution + '%0D%0A%0D%0AKind%20regards,%0D%0A%0D%0A' + firstname + '%20' + lastname);
+      $("#rsvpbtn").attr('href', 'mailto:scholtes@ifi.uzh.ch?subject=RSVP%20for%20Computational%20Social%20Science%20Symposium&body=Dear%20organizers,%0D%0A%0D%0AI%20plan%20to%20attend%20the%20symposium%20Computational%20Social%20Science%20-%20Quo%20Vadis.%20My%20registration%20data%20are:%0D%0A%0D%0AFirstname:%20%20' + firstname + '%0D%0ALastname:%20%20%20' + lastname + '%0D%0AInstitution:%20%20' + institution + '%0D%0A%0D%0AKind%20regards,%0D%0A%0D%0A' + firstname + '%20' + lastname);
     });
   </script>
 <p>Note: <i>Your registration will be sent via E-Mail. No data are submitted to the server.</i></p>
